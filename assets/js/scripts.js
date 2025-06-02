@@ -4,11 +4,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Menu responsivo
     const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
+    const navItems = document.querySelector('.nav-items');
     
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
+            navItems.classList.toggle('active');
             
             // Anima as barras do menu hambúrguer
             const bars = document.querySelectorAll('.menu-toggle span');
@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 // Fecha o menu mobile se estiver aberto
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
+                if (navItems.classList.contains('active')) {
+                    navItems.classList.remove('active');
                 }
                 
                 // Scroll suave até o elemento
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Validação simples do formulário de contato
+    // Validação e envio do formulário de contato
     const contactForm = document.getElementById('contact-form');
     
     if (contactForm) {
@@ -118,6 +118,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
+                // Configuração para enviar para o email do usuário
+                const formData = {
+                    name: nameInput.value.trim(),
+                    email: emailInput.value.trim(),
+                    message: messageInput.value.trim(),
+                    to: 'katy.garcia@kgfdatasolutions.com' // Email do usuário
+                };
+                
                 // Simulação de envio bem-sucedido
                 const submitBtn = contactForm.querySelector('button[type="submit"]');
                 const originalText = submitBtn.textContent;
@@ -125,6 +133,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitBtn.disabled = true;
                 submitBtn.textContent = 'Enviando...';
                 
+                // Em um ambiente real, aqui seria feita uma requisição AJAX para um backend
+                // que processaria o envio do email
                 setTimeout(function() {
                     contactForm.reset();
                     submitBtn.textContent = 'Enviado com sucesso!';
@@ -134,6 +144,9 @@ document.addEventListener('DOMContentLoaded', function() {
                         submitBtn.textContent = originalText;
                     }, 3000);
                 }, 1500);
+                
+                console.log('Formulário enviaria para:', formData.to);
+                console.log('Dados do formulário:', formData);
             }
         });
     }

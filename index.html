@@ -12,7 +12,7 @@
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -30,43 +30,59 @@
                 </a>
             </div>
             
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
             <nav>
-                <ul>
-                    <li><a href="#home">Início</a></li>
+                <ul class="nav-items">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
+                <a href="#contato" class="cta-button">Fale Conosco</a>
             </nav>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <h1 class="fade-in">De dados à decisão: criamos soluções reais, éticas e inteligentes para os desafios do seu negócio.</h1>
-            <p class="fade-in delay-1">A KGF Data Solutions oferece soluções personalizadas de análise de dados, automação inteligente e modelagem estatística, com foco em eficiência, inovação e apoio à decisão para o setor de saúde, seguros e tecnologia.</p>
-            <a href="#contato" class="btn fade-in delay-2">Fale Conosco</a>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="fade-in">De dados à decisão: criamos soluções reais, éticas e inteligentes</h1>
+                <p class="fade-in delay-1">A KGF Data Solutions oferece soluções personalizadas de análise de dados, automação inteligente e modelagem estatística, com foco em eficiência, inovação e apoio à decisão para o setor de saúde, seguros e tecnologia.</p>
+                <a href="#contato" class="cta-button fade-in delay-2">Fale Conosco</a>
+            </div>
+            <div class="hero-image fade-in delay-2">
+                <img src="assets/images/logo_escuro.png" alt="KGF Data Solutions">
+            </div>
         </div>
     </section>
+    
+    <div class="section-divider"></div>
     
     <!-- Sobre a Empresa -->
     <section id="sobre" class="sobre">
         <div class="container">
-            <div class="section-title">
-                <h2>Sobre a Empresa</h2>
-            </div>
-            
-            <div class="sobre-content">
-                <div class="sobre-text fade-in">
+            <div class="sobre-container">
+                <div class="sobre-content fade-in">
+                    <h2>Sobre a Empresa</h2>
                     <p>A KGF Data Solutions foi fundada em 2020, com o propósito de oferecer soluções técnicas que traduzem dados complexos em ações concretas. Já desenvolveu projetos para grandes nomes como Semantix, RESULT – Consultoria Atuarial e DOXT, atuando com excelência em auditoria automatizada de prontuários, análises atuariais, e modelos preditivos para operadoras de saúde.</p>
+                    
+                    <div class="missao-visao">
+                        <div class="missao">
+                            <h3>Missão</h3>
+                            <p>Criar soluções baseadas em dados que resolvam problemas reais de negócios com precisão, ética e inovação.</p>
+                        </div>
+                        
+                        <div class="visao">
+                            <h3>Visão</h3>
+                            <p>Ser referência em soluções analíticas, automações com uso de IA e machine learning no setor de saúde e seguros.</p>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="sobre-image fade-in delay-1">
@@ -74,34 +90,18 @@
                 </div>
             </div>
             
-            <div class="missao-visao">
-                <div class="missao fade-in">
-                    <h3>Missão</h3>
-                    <p>Criar soluções baseadas em dados que resolvam problemas reais de negócios com precisão, ética e inovação.</p>
-                </div>
-                
-                <div class="visao fade-in delay-1">
-                    <h3>Visão</h3>
-                    <p>Ser referência em soluções analíticas, automações com uso de IA e machine learning no setor de saúde e seguros.</p>
-                </div>
-            </div>
-            
             <div class="fundadora">
-                <div class="section-title">
-                    <h2>Sobre a Fundadora</h2>
-                </div>
-                
-                <div class="fundadora-content">
+                <div class="fundadora-container">
                     <div class="fundadora-image fade-in">
                         <img src="assets/images/Katy_Garcia.jpg" alt="Katy Garcia de Freitas">
                     </div>
                     
-                    <div class="fundadora-text fade-in delay-1">
-                        <h3>Katy Garcia de Freitas</h3>
-                        <p>Estatística com mais de 20 anos de experiência, mestre em Estatística pela Universidade do Minho e com MBA Executivo em Gestão da Saúde pela FGV. É especialista em modelagem estatística e inteligência artificial, com forte atuação em detecção de riscos, fraudes, e análise estratégica de dados para tomada de decisão.</p>
+                    <div class="fundadora-content fade-in delay-1">
+                        <h2>Sobre a Fundadora</h2>
+                        <p>Katy Garcia de Freitas é estatística com mais de 20 anos de experiência, mestre em Estatística pela Universidade do Minho e com MBA Executivo em Gestão da Saúde pela FGV. É especialista em modelagem estatística e inteligência artificial, com forte atuação em detecção de riscos, fraudes, e análise estratégica de dados para tomada de decisão.</p>
                         
                         <div class="destaques">
-                            <h4>Destaques profissionais:</h4>
+                            <h3>Destaques profissionais:</h3>
                             <ul>
                                 <li>Expertise em modelagem preditiva, machine learning e IA aplicada à saúde e finanças.</li>
                                 <li>Desenvolvimento de dashboards e automações inteligentes com Power BI, Python, SQL e R.</li>
@@ -115,6 +115,48 @@
             </div>
         </div>
     </section>
+    
+    <div class="section-divider"></div>
+    
+    <!-- Cards de Serviços -->
+    <section class="servicos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossas Soluções</h2>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análise de Dados</h3>
+                    <p>Transformamos dados complexos em insights acionáveis para apoiar decisões estratégicas de negócios.</p>
+                    <a href="#contato" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="card fade-in delay-1">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automação com IA</h3>
+                    <p>Desenvolvemos soluções de automação inteligente para otimizar processos e aumentar a eficiência operacional.</p>
+                    <a href="#contato" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="card fade-in delay-2">
+                    <div class="card-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Modelagem Estatística</h3>
+                    <p>Criamos modelos estatísticos avançados para previsão, classificação e otimização de resultados.</p>
+                    <a href="#contato" class="card-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
     
     <!-- Projetos Desenvolvidos -->
     <section id="projetos" class="projetos">
@@ -131,7 +173,6 @@
                     </div>
                     <div class="empresa-info">
                         <h3>Semantix</h3>
-                        <p>Data Scientist | nov/2022 – atual</p>
                     </div>
                 </div>
                 
@@ -140,49 +181,36 @@
                 <div class="projetos-destaque">
                     <h4>Projetos de destaque:</h4>
                     
-                    <div class="projeto-item">
-                        <h5>Sistema Inteligente de Internação Hospitalar</h5>
-                        <p>Alocação de leitos com IA em tempo real (84% de acurácia).</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Previsão de Demanda de Pronto-Socorro</h5>
-                        <p>Previsão de atendimentos com base em clima e histórico (28 dias).</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Protocolo Inteligente para Dor Torácica</h5>
-                        <p>LLMs para prever eventos vasculares com 85% de precisão.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Detecção de Necessidade Cirúrgica</h5>
-                        <p>Identificação automatizada de casos cirúrgicos com LLMs.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Predição do Tempo de Internação</h5>
-                        <p>Estimativa dinâmica com mais de 80% de precisão.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Análise Global de Indicadores</h5>
-                        <p>Geração de relatórios com IA baseada em KPIs hospitalares.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Geração Inteligente de Relatórios</h5>
-                        <p>Automação de relatórios com integração em Excel.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Sistema Multiagente para Avaliação de Prontuários</h5>
-                        <p>IA distribuída para apoiar comissões de prontuário.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Automação da Análise de Contratos Coletivos</h5>
-                        <p>IA para insights estratégicos em relatórios mensais de corretoras.</p>
+                    <div class="projetos-grid">
+                        <div class="projeto-item">
+                            <h5>Sistema Inteligente de Internação Hospitalar</h5>
+                            <p>Alocação de leitos com IA em tempo real (84% de acurácia).</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Previsão de Demanda de Pronto-Socorro</h5>
+                            <p>Previsão de atendimentos com base em clima e histórico (28 dias).</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Protocolo Inteligente para Dor Torácica</h5>
+                            <p>LLMs para prever eventos vasculares com 85% de precisão.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Detecção de Necessidade Cirúrgica</h5>
+                            <p>Identificação automatizada de casos cirúrgicos com LLMs.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Predição do Tempo de Internação</h5>
+                            <p>Estimativa dinâmica com mais de 80% de precisão.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Análise Global de Indicadores</h5>
+                            <p>Geração de relatórios com IA baseada em KPIs hospitalares.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,7 +223,6 @@
                     </div>
                     <div class="empresa-info">
                         <h3>RESULT – Consultoria Atuarial</h3>
-                        <p>Estatística Sênior | nov/2022 – atual</p>
                     </div>
                 </div>
                 
@@ -204,39 +231,36 @@
                 <div class="projetos-destaque">
                     <h4>Projetos de destaque:</h4>
                     
-                    <div class="projeto-item">
-                        <h5>Seguro Saúde Pet</h5>
-                        <p>Precificação de produto para mercado pet.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Análise de Home Care</h5>
-                        <p>Mapeamento para otimização de rede e equipe.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Modelagem de Aposentadoria e Óbito</h5>
-                        <p>Projeções sustentáveis para cooperativa médica.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Fundo para Eventos Catastróficos</h5>
-                        <p>Modelos de viabilidade e risco.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Automação de Processos Atuariais</h5>
-                        <p>Eficiência com rastreabilidade.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Diagnóstico de Contratos Individuais</h5>
-                        <p>Análise de viabilidade regulatória e financeira.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Análise de Carteira</h5>
-                        <p>Avaliação assistencial e financeira com foco em indicadores estratégicos.</p>
+                    <div class="projetos-grid">
+                        <div class="projeto-item">
+                            <h5>Seguro Saúde Pet</h5>
+                            <p>Precificação de produto para mercado pet.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Análise de Home Care</h5>
+                            <p>Mapeamento para otimização de rede e equipe.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Modelagem de Aposentadoria e Óbito</h5>
+                            <p>Projeções sustentáveis para cooperativa médica.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Fundo para Eventos Catastróficos</h5>
+                            <p>Modelos de viabilidade e risco.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Automação de Processos Atuariais</h5>
+                            <p>Eficiência com rastreabilidade.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Diagnóstico de Contratos Individuais</h5>
+                            <p>Análise de viabilidade regulatória e financeira.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -249,7 +273,6 @@
                     </div>
                     <div class="empresa-info">
                         <h3>DOXT</h3>
-                        <p>Especialista em Analytics / Data Scientist | jun/2020 – out/2022</p>
                     </div>
                 </div>
                 
@@ -258,34 +281,38 @@
                 <div class="projetos-destaque">
                     <h4>Projetos de destaque:</h4>
                     
-                    <div class="projeto-item">
-                        <h5>Comitê de Sinistros na COVID-19</h5>
-                        <p>Modelos com 98% de precisão para estimar receitas e despesas em cenário crítico.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Análise de Rede Prestadora</h5>
-                        <p>Redesenho da rede baseado em desempenho assistencial e economia de €17 milhões.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Modelos de Custo e Desempenho</h5>
-                        <p>Forecasting de gastos e avaliação de prestadores.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Dashboards e Relatórios Interativos</h5>
-                        <p>BI com Power BI para gestão clínica e operacional.</p>
-                    </div>
-                    
-                    <div class="projeto-item">
-                        <h5>Validação de Bases de Dados</h5>
-                        <p>Qualidade e integridade para suportar decisões.</p>
+                    <div class="projetos-grid">
+                        <div class="projeto-item">
+                            <h5>Comitê de Sinistros na COVID-19</h5>
+                            <p>Modelos com 98% de precisão para estimar receitas e despesas em cenário crítico.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Análise de Rede Prestadora</h5>
+                            <p>Redesenho da rede baseado em desempenho assistencial e economia de €17 milhões.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Modelos de Custo e Desempenho</h5>
+                            <p>Forecasting de gastos e avaliação de prestadores.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Dashboards e Relatórios Interativos</h5>
+                            <p>BI com Power BI para gestão clínica e operacional.</p>
+                        </div>
+                        
+                        <div class="projeto-item">
+                            <h5>Validação de Bases de Dados</h5>
+                            <p>Qualidade e integridade para suportar decisões.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <div class="section-divider"></div>
     
     <!-- Portfólio de Projetos -->
     <section id="portfolio" class="portfolio">
@@ -301,6 +328,8 @@
         </div>
     </section>
     
+    <div class="section-divider"></div>
+    
     <!-- Contato -->
     <section id="contato" class="contato">
         <div class="container">
@@ -310,6 +339,7 @@
             
             <div class="contato-container">
                 <div class="contato-form fade-in">
+                    <h3>Envie uma mensagem</h3>
                     <form id="contact-form">
                         <div class="form-group">
                             <label for="name">Nome</label>
@@ -326,7 +356,7 @@
                             <textarea id="message" name="message" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
                     </form>
                 </div>
                 
